@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/adopciones?currentSchema=public&ApplicationName=wms-sys-asn&socketTimeout=30
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: hunter
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      format_sql: true
