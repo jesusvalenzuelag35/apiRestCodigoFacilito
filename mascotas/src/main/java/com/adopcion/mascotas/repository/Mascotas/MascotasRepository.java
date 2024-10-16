@@ -1,11 +1,9 @@
-package com.adopcion.mascotas.repository;
+package com.adopcion.mascotas.repository.Mascotas;
 
-import com.adopcion.mascotas.entidades.Adopcion;
 import com.adopcion.mascotas.entidades.Mascota;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AdopcionRepository extends JpaRepository<Adopcion,Long> {
-
+public interface MascotasRepository extends JpaRepository<Mascota,Long> {
 }

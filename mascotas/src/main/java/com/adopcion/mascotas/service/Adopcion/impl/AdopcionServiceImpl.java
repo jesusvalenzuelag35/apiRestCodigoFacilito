@@ -1,8 +1,8 @@
-package com.adopcion.mascotas.service.impl;
+package com.adopcion.mascotas.service.Adopcion.impl;
 
 import com.adopcion.mascotas.entidades.Adopcion;
-import com.adopcion.mascotas.repository.AdopcionRepository;
-import com.adopcion.mascotas.service.AdopcionService;
+import com.adopcion.mascotas.repository.Adopciones.AdopcionRepository;
+import com.adopcion.mascotas.service.Adopcion.AdopcionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

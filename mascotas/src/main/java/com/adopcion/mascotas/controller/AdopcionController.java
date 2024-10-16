@@ -1,12 +1,12 @@
 package com.adopcion.mascotas.controller;
 
 import com.adopcion.mascotas.entidades.Adopcion;
-import com.adopcion.mascotas.service.AdopcionService;
+import com.adopcion.mascotas.service.Adopcion.AdopcionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/adopciones")
 public class AdopcionController {
 
     @Autowired

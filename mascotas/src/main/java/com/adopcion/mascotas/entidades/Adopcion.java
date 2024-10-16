@@ -1,6 +1,7 @@
 package com.adopcion.mascotas.entidades;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.extern.java.Log;
@@ -29,12 +30,12 @@ public class Adopcion {
 
     @ManyToOne
     @JoinColumn(name = "mascota_id", referencedColumnName = "id",insertable=false, updatable=false)
-    @JsonIgnore
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "adopciones"})
     private Mascota mascota;
 
     @ManyToOne
     @JoinColumn(name = "usuario_id", referencedColumnName = "id",insertable=false, updatable=false)
-    @JsonIgnore
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "adopciones"})
     private Usuario usuario;
 
 

@@ -1,7 +1,10 @@
 package com.adopcion.mascotas.entidades;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
+
+import java.util.List;
 
 @Table(name = "mascota")
 @Entity
@@ -29,6 +32,11 @@ public class Mascota {
     @ManyToOne
     @JoinColumn(name = "id_tipo_mascota", referencedColumnName = "id",insertable=false, updatable=false)
     private TipoMascota tipoMascota;
+
+    @OneToMany(mappedBy = "mascota")
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "mascota"})
+    private List<Adopcion> adopciones;
+
 
 
 }

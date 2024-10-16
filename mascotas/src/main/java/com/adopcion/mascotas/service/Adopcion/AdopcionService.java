@@ -1,4 +1,4 @@
-package com.adopcion.mascotas.service;
+package com.adopcion.mascotas.service.Adopcion;
 
 import com.adopcion.mascotas.entidades.Adopcion;
 
